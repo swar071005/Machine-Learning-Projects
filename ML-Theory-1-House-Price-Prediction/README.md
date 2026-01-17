@@ -1,85 +1,169 @@
-# 🏡 Experiment 01 – House Price Prediction
+# 🚢 Experiment 1: Titanic – Machine Learning from Disaster
 
 ## 🎯 Project Objective
-The aim of this experiment is to predict house prices using Machine Learning regression models.  
-We analyze a housing dataset, perform preprocessing, train models, evaluate their performance, and visualize results.
+The objective of this experiment is to apply **Machine Learning techniques** to analyze real-world structured data and understand how different models behave in terms of **bias and variance**.  
+This experiment focuses on data preprocessing, feature scaling, training multiple regression models, and evaluating their performance.
 
 ---
 
-## 📂 Folder Contents
+## ❓ Problem Statement
+Predictive modeling on real-world datasets (such as Titanic-like disaster data) involves multiple interacting features.  
+Simple models may underfit the data, while complex models may overfit.
 
-| File                           | Description                                                  |
-|--------------------------------|--------------------------------------------------------------|
-| `House-Price-Prediction.ipynb` | Colab notebook with complete implementation                  |
-| `Experiment-01-Report.pdf`     | Report summarizing the methodology, experiments, and results |
-| `README.md`                    | This file with experiment overview                           |
+**Problem:**  
+Build and evaluate multiple Machine Learning models to:
+- Learn relationships between features and target values  
+- Analyze bias–variance trade-off  
+- Improve prediction accuracy using ensemble learning  
+
+---
+
+## 📊 Dataset Description
+The dataset is loaded from an Excel file using Pandas.
+
+### 🎯 Target Variable
+- `median_house_value`
+
+### 📌 Input Features
+- longitude, latitude  
+- housing_median_age  
+- total_rooms, total_bedrooms  
+- population, households  
+- median_income  
+- One-hot encoded categorical features  
+
+---
+
+## 📁 Folder Contents
+Titanic-Machine-Learning-from-Disaster/
+
+├── Titanic - Machine Learning from Disaster.ipynb
+
+├── housing.xlsx
+
+├── README.md
 
 ---
 
 ## 🛠 Tools & Technologies
-
-- **Python 3.x** – Programming language  
-- **Google Colab** – Development environment  
-- **NumPy & Pandas** – Data processing  
-- **Matplotlib & Seaborn** – Data visualization  
-- **Scikit-Learn** – Machine Learning models (Linear Regression, etc.)
-
----
-
-## 🧩 Problem Statement
-Predicting house prices is a regression problem where the goal is to estimate a continuous target variable (price) based on features like area, bedrooms, and location.  
-This experiment demonstrates data preprocessing, model training, evaluation, and visualization of results.
+- 🧑‍💻 Platform: Google Colab  
+- 🐍 Language: Python  
+- 📦 Libraries:
+  - pandas
+  - numpy
+  - scikit-learn
+  - openpyxl
+- 🤖 Models Used:
+  - Linear Regression
+  - Ridge Regression
+  - Decision Tree Regressor
+  - Random Forest Regressor
 
 ---
 
 ## 🔍 Methodology
 
-1. **Data Loading & Exploration**  
-   - Inspect dataset structure, check missing values, and explore basic statistics.
+### 1️⃣ Data Loading
+- Excel dataset loaded using `pandas.read_excel()`
+- Data preview and column verification
+- Missing values checked using `isnull().sum()`
 
-2. **Data Preprocessing**  
-   - Handle missing values, encode categorical features, normalize data if needed.
+### 2️⃣ Feature Selection
+- Target variable:
+  - `median_house_value`
+- Input features:
+  - All remaining columns
 
-3. **Model Training**  
-   - Train regression models using Scikit-Learn (Linear Regression, optionally others)
+### 3️⃣ Train–Test Split
+- 80% training data  
+- 20% testing data  
+- Ensures unbiased model evaluation
 
-4. **Evaluation**  
-   - Metrics: MAE, RMSE, R²  
-   - Analyze where the model performs well or struggles
+### 4️⃣ Feature Scaling
+- `StandardScaler` applied to numerical features
+- Used for Linear & Ridge Regression
+- Tree-based models trained without scaling
 
-5. **Visualization**  
-   - Scatter plots of actual vs predicted values  
-   - Regression line plots  
+### 5️⃣ Model Training
+The following models were trained:
+- Linear Regression
+- Ridge Regression (regularization)
+- Decision Tree Regression
+- Random Forest Regression (ensemble learning)
+
+### 6️⃣ Model Evaluation
+Models evaluated using:
+- 📉 Root Mean Squared Error (RMSE)
+- 📐 Mean Absolute Error (MAE)
 
 ---
 
 ## 📈 Results & Insights
 
-- The model predicts house prices with high accuracy for the given dataset.  
-- Some visualizations (included in PDF) show the relationship between area and price.  
-- Evaluation metrics indicate the effectiveness of the model.
+### 🔎 Model Performance Summary
+
+|       Model       | Train RMSE | Test RMSE | Test MAE |
+|-------------------|------------|-----------|----------|
+| Linear Regression |   High     |   High    |   High   |
+| Ridge Regression  |   High     |   High    |   High   |
+| Decision Tree     |    0.0     |   High    |   High   |
+| Random Forest     |   18118    |   49038   |  31639   |
+
+### 🧠 Bias–Variance Analysis
+- **Linear & Ridge Regression**  
+  🔹 High bias → underfitting  
+  🔹 Fail to capture non-linear relationships  
+
+- **Decision Tree**  
+  🔸 High variance → overfitting  
+  🔸 Perfect training accuracy but poor test results  
+
+- **Random Forest**  
+  ✅ Reduces overfitting using multiple trees  
+  ✅ Better generalization and stability  
 
 ---
 
-## 🚀 How to Run / View
+## 🧪 Step-by-Step Execution
+1. Install dependency:
+   ```bash
+   pip install openpyxl
+2. Load dataset using Pandas
 
-1. Open the notebook file: `House-Price-Prediction.ipynb`  
-2. Run all cells in Google Colab  
-3. Review plots, predictions, and evaluation metrics
+3. Check missing values and columns
+
+4. Split dataset into training & testing sets
+
+5. Apply feature scaling
+
+6. Train models
+
+7. Evaluate using RMSE and MAE
+
+8. Compare results and analyze performance
+
+---
+
+## 📝 Notes
+
+1. Feature scaling is essential for linear models
+
+2. Decision Trees do not require scaling
+
+3. Ensemble models improve robustness
+
+4. Model selection depends on bias–variance trade-off
 
 ---
 
-## 💡 Notes
+## ✅ Conclusion
 
-- All files are structured for clarity and reproducibility.  
-- Experiment can be extended to include more features or different regression models.  
-- PDFs in the folder contain full documentation for reference.
-
----
-
-## 📌 References
-
-- **Google Colab:** [https://colab.research.google.com/drive/14YZlb0nnzCnrEg2vYyr1h4wZfRipRcjU#scrollTo=ZLteJOxVLKQu]  
-- **Kaggle:** [Titanic Competition Submissions](https://www.kaggle.com/competitions/titanic/submissions)
+This experiment demonstrates a complete Machine Learning workflow including data preprocessing, model training, evaluation, and bias–variance analysis.
+The use of ensemble learning improves model generalization and highlights best practices for real-world predictive modeling.
 
 ---
+
+## 📚 References
+Google Colab Documentation: [https://colab.research.google.com/]
+
+Kaggle Titanic Dataset: [https://www.kaggle.com/datasets/c/titanic]
