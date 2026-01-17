@@ -79,6 +79,7 @@ This experiment demonstrates data preprocessing, model training, evaluation, and
 
 ## 📌 References
 
-- [Google Colab](https://colab.research.google.com/drive/14YZlb0nnzCnrEg2vYyr1h4wZfRipRcjU#scrollTo=ZLteJOxVLKQu)  
+- **Google Colab:** [https://colab.research.google.com/drive/14YZlb0nnzCnrEg2vYyr1h4wZfRipRcjU#scrollTo=ZLteJOxVLKQu]  
+- **Kaggle:** [Titanic Competition Submissions](https://www.kaggle.com/competitions/titanic/submissions)
 
 ---
