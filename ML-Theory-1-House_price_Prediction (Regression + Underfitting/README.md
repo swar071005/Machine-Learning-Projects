@@ -194,7 +194,7 @@ Among all models, Random Forest Regression performs best due to its ability to h
 
 ## 🔗 Project & Dataset Links
 
-📘 Google Colab Notebook: [https://colab.research.google.com/drive/1lIqtIIUedyLFuLV7IFcKBgurQxJy81wl]
+📘 Google Colab Notebook: [https://colab.research.google.com/drive/16xFA0CYw6FZ7GOGOaXteRmjfIn6IMYrA#scrollTo=JeSEDme1A8KR]
 
 📊 Kaggle Dataset: [https://www.kaggle.com/datasets/camnugent/california-housing-prices]
 
