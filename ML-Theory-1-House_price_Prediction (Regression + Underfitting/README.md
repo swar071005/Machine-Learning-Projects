@@ -191,12 +191,12 @@ This experiment demonstrates a complete Machine Learning regression pipeline, in
 Among all models, Random Forest Regression performs best due to its ability to handle non-linear relationships and reduce overfitting.
 
 ---
-
 ## 🔗 Project & Dataset Links
 
-📘 Google Colab Notebook: [https://colab.research.google.com/drive/16xFA0CYw6FZ7GOGOaXteRmjfIn6IMYrA#scrollTo=JeSEDme1A8KR]
+📘 Google Colab Notebook
+👉 https://colab.research.google.com/drive/16xFA0CYw6FZ7GOGOaXteRmjfIn6IMYrA#scrollTo=JeSEDme1A8KR
 
-📊 Kaggle Dataset: [https://www.kaggle.com/datasets/camnugent/california-housing-prices]
+📊 Kaggle Dataset – California Housing Prices
+👉 https://www.kaggle.com/datasets/camnugent/california-housing-prices
 
-
-
+---
