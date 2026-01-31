@@ -44,8 +44,11 @@ The dataset is loaded from an Excel file (`housing.xlsx`) using Pandas.
 
 ## 📁 Folder Contents
 House-Price-Prediction/
+
 ├── House_Price_Prediction.ipynb
+
 ├── housing.xlsx
+
 ├── README.md
 
 ---
