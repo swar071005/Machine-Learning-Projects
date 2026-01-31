@@ -35,9 +35,11 @@ Machine-Learning-Projects/
 │
 ├── ML-Theory-1-House_price_Prediction (Regression + Underfitting)/
 │   ├── House-Price-Prediction.ipynb
-│   ├── housing.csv
 │   └── README.md
 │
+├── ML-Theory-2-Bank_Marketing_Campaign/
+|   ├── Bank_Marketing_Campaign.ipynb
+|   └── README.md  
 └── README.md   ← (This file)
 ```
 
@@ -146,5 +148,112 @@ I would like to thank my **faculty**, **online learning platforms**, and **open-
 📘 **Google Colab Notebook:**  [https://colab.research.google.com/drive/16xFA0CYw6FZ7GOGOaXteRmjfIn6IMYrA#scrollTo=JeSEDme1A8KR](https://colab.research.google.com/drive/16xFA0CYw6FZ7GOGOaXteRmjfIn6IMYrA#scrollTo=JeSEDme1A8KR)
 
 📊 **Kaggle** :  [https://www.kaggle.com/datasets/camnugent/california-housing-prices]
+
+---
+
+## 🏦 Experiment 02: Bank Marketing Campaign – Term Deposit Prediction
+
+**Problem Type:** Classification  
+**Dataset:** UCI Bank Marketing Dataset  
+**Target Variable:** Term Deposit Subscription (`y` – yes / no)
+
+---
+
+### This experiment focuses on:
+
+- Predicting whether a bank customer will subscribe to a term deposit  
+- Building a binary classification model using Logistic Regression  
+- Evaluating model performance beyond accuracy  
+- Understanding precision–recall trade-off and threshold optimization  
+
+---
+
+## 📚 Concepts Covered
+
+- Supervised Learning  
+- Binary Classification  
+- Logistic Regression  
+- Train–Test Split  
+- Confusion Matrix  
+- Precision, Recall, and F1-score  
+- Sensitivity and Specificity  
+- ROC Curve and ROC-AUC  
+- Threshold-based decision making  
+
+---
+
+## 🛠️ Tools & Technologies
+
+🐍 Python 3.x  
+☁️ Google Colab  
+
+📊 Pandas & NumPy – Data handling  
+📈 Scikit-Learn – ML models & metrics  
+📉 Matplotlib / Seaborn – Visualization  
+🌐 Git & GitHub – Version control  
+
+---
+
+## 🚀 How to Use This Repository
+
+- Clone the repository  
+- Open the **Bank Marketing Campaign** experiment folder  
+- Launch the notebook in **Google Colab**  
+- Upload and extract the dataset (ZIP/CSV) if prompted  
+- Run cells sequentially to view predictions and evaluation results  
+
+---
+
+## 🎓 Learning Outcomes
+
+After completing this experiment, learners will be able to:
+
+- Build and evaluate a Logistic Regression classification model  
+- Interpret confusion matrix and classification metrics  
+- Understand the importance of ROC curves  
+- Analyze precision–recall trade-offs  
+- Apply threshold tuning for business-oriented predictions  
+
+---
+
+## 🏫 Academic Relevance
+
+- Aligned with Machine Learning syllabus  
+- Suitable for classification lab experiments, assignments, and viva  
+- Demonstrates practical application of theoretical classification concepts  
+- Supports Bloom’s Taxonomy (Apply, Analyze, Evaluate)  
+
+---
+
+## 🔮 Future Scope & Extensions
+
+- Try advanced classifiers (SVM, Decision Tree, Random Forest)  
+- Hyperparameter tuning using GridSearchCV  
+- Cross-validation techniques  
+- Cost-sensitive learning  
+- Model deployment using Flask or Streamlit  
+- Participation in real-world marketing analytics challenges  
+
+---
+
+## 📌 References
+
+- Scikit-Learn Documentation  
+- UCI Machine Learning Repository – Bank Marketing Dataset  
+- Google Colab Tutorials  
+- Machine Learning by Tom Mitchell  
+
+---
+
+## 🙏 Acknowledgement
+
+I would like to thank my faculty, online learning platforms, and open-source communities for their valuable guidance and resources in understanding classification models and evaluation techniques.
+
+---
+
+## 🔗 Project & Dataset Links
+📘 **Google Colab Notebook** 👉 [https://colab.research.google.com/drive/1LeoTkdZObKmTU0Ll8T77f0_3oQsCg2-z?usp=sharing]
+
+📊 **UCI Bank Marketing Dataset** 👉 [https://archive.ics.uci.edu/dataset/222/bank+marketing]
 
 ---
