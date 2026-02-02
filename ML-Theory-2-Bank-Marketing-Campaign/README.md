@@ -192,9 +192,9 @@ This experiment presents a complete and systematic approach to binary classifica
 ---
 
 ## 🔗 Project & Dataset Links
-📘 **Google Colab Notebook** 👉 https://colab.research.google.com/drive/1LeoTkdZObKmTU0Ll8T77f0_3oQsCg2-z?usp=sharing
+📘 **Google Colab Notebook** 👉 [https://colab.research.google.com/drive/1LeoTkdZObKmTU0Ll8T77f0_3oQsCg2-z?usp=sharing]
 
-📊 **UCI Bank Marketing Dataset** 👉 https://archive.ics.uci.edu/dataset/222/bank+marketing
+📊 **UCI Bank Marketing Dataset** 👉 [https://archive.ics.uci.edu/dataset/222/bank+marketing]
 
 ---
 
