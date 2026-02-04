@@ -39,7 +39,12 @@ Machine-Learning-Projects/
 │
 ├── ML-Theory-2-Bank_Marketing_Campaign/
 |   ├── Bank_Marketing_Campaign.ipynb
-|   └── README.md  
+|   └── README.md
+|
+├── ML-Lab-1-Implementation_of_Supervised_and_Unsupervised_Learning_Algorithms/
+|   ├── Implementation-of-Supervised-and-Unsupervised-Learning-Algorithms.ipynb
+|   └── README.md
+| 
 └── README.md   ← (This file)
 ```
 
@@ -47,7 +52,7 @@ Machine-Learning-Projects/
 
 ## 🧪 **Experiments Included**
 
-### 🏡 **Experiment 01: House Price Prediction**
+### 🏡 **(Theory) Experiment 01: House Price Prediction**
 
 **Problem Type:** Regression
 **Dataset:** California Housing Prices
@@ -153,7 +158,7 @@ I would like to thank my **faculty**, **online learning platforms**, and **open-
 ---
 
 
-## 🏦 Experiment 02: Bank Marketing Campaign – Term Deposit Prediction
+## 🏦(Theory) Experiment 02: Bank Marketing Campaign – Term Deposit Prediction
 
 **Problem Type:** Classification  
 **Dataset:** UCI Bank Marketing Dataset  
@@ -257,5 +262,173 @@ I would like to thank my faculty, online learning platforms, and open-source com
 📘 **Google Colab Notebook** 👉 [https://colab.research.google.com/drive/1LeoTkdZObKmTU0Ll8T77f0_3oQsCg2-z?usp=sharing]
 
 📊 **UCI Bank Marketing Dataset** 👉 [https://archive.ics.uci.edu/dataset/222/bank+marketing]
+
+
+---
+
+
+## 🏠 (Lab) Experiment 01: Supervised & Unsupervised Learning – Housing Data Analysis
+
+**Problem Type:** Regression & Clustering  
+**Dataset:** USA Housing Dataset  
+**Target Variable:** House Price (`Price`)
+
+---
+
+### This experiment focuses on:
+
+- Predicting house prices using **Supervised Learning (Linear Regression)**  
+- Discovering natural groupings in housing data using **Unsupervised Learning (K-Means Clustering)**  
+- Comparing prediction-based and pattern-discovery-based learning paradigms  
+- Understanding bias–variance considerations and business implications  
+
+---
+
+## 📚 Concepts Covered
+
+- Supervised Learning  
+- Unsupervised Learning  
+- Linear Regression  
+- K-Means Clustering  
+- Train–Test Split  
+- Feature Scaling  
+- Regression Evaluation Metrics (MAE, MSE, RMSE)  
+- Bias–Variance Trade-off  
+- Business Interpretation of ML Models  
+
+---
+
+## 🛠️ Tools & Technologies
+
+🐍 Python 3.x  
+☁️ Google Colab  
+
+📊 Pandas & NumPy – Data preprocessing and handling  
+📈 Scikit-Learn – ML models and evaluation  
+📉 Matplotlib & Seaborn – Visualization  
+🌐 Git & GitHub – Version control and documentation  
+
+---
+
+## 🚀 How to Use This Repository
+
+- Clone the repository  
+- Open the **Supervised & Unsupervised Learning** experiment folder  
+- Launch the notebook in **Google Colab**  
+- Upload the `USA_Housing.csv` dataset if prompted  
+- Run all cells sequentially to view predictions, clusters, and insights  
+
+---
+
+## 📊 Dataset Description
+
+- **Dataset Name:** USA Housing Dataset  
+- **Source:** Kaggle  
+- **Records:** 5000  
+- **Features:** 7  
+
+The dataset consists of numerical housing attributes such as income, population, and house characteristics.  
+The `Address` column is excluded from modeling.
+
+---
+
+## 🎯 Target Variable
+
+- **Price** – Continuous variable representing house price (used in supervised learning).
+
+---
+
+## 📥 Input Features
+
+- Avg. Area Income  
+- Avg. Area House Age  
+- Avg. Area Number of Rooms  
+- Avg. Area Number of Bedrooms  
+- Area Population  
+
+---
+
+## 🔍 Methodology
+
+### 🔹 Supervised Learning (Linear Regression)
+- Selected numerical features and target variable
+- Split data into training and testing sets
+- Trained Linear Regression model
+- Evaluated performance using MAE, MSE, and RMSE
+- Visualized Actual vs Predicted house prices
+
+### 🔹 Unsupervised Learning (K-Means Clustering)
+- Removed target variable and categorical features
+- Applied feature scaling using StandardScaler
+- Performed clustering with K-Means
+- Visualized clusters based on income and population
+
+---
+
+## 📈 Results & Insights
+
+- Linear Regression produced reliable house price predictions.
+- Regression plot showed strong correlation between actual and predicted values.
+- K-Means clustering revealed meaningful groupings in housing data.
+- Supervised learning enabled quantitative evaluation.
+- Unsupervised learning provided exploratory insights without labels.
+
+---
+
+## ⚖️ Bias–Variance & Business Perspective
+
+- Linear Regression offers **low variance** and **moderate bias**, making it stable and interpretable.
+- K-Means is sensitive to feature scaling and choice of cluster count.
+- From a business standpoint:
+  - Supervised learning is ideal for **price prediction**
+  - Unsupervised learning supports **market segmentation and planning**
+
+---
+
+## ▶️ Step-by-Step Execution
+
+1. Open the Google Colab notebook  
+2. Upload the `USA_Housing.csv` dataset  
+3. Execute all cells in order  
+4. Review evaluation metrics and visualizations  
+5. Interpret supervised vs unsupervised outcomes  
+
+---
+
+## 📝 Notes
+
+- Feature scaling is essential for clustering algorithms.
+- Linear Regression assumes linear relationships.
+- Evaluation is objective in supervised learning and exploratory in unsupervised learning.
+
+---
+
+## 🎓 Viva-Voce Key Points
+
+- Supervised learning uses labeled data; unsupervised learning does not.
+- Linear Regression predicts continuous values.
+- K-Means groups similar data points based on distance.
+- Feature scaling improves clustering performance.
+- Algorithm choice depends on problem type and data availability.
+
+---
+
+## 🏁 Conclusion
+
+This experiment successfully demonstrated the application of **Supervised and Unsupervised Learning techniques** using a real-world housing dataset. Linear Regression effectively predicted house prices when labeled data was available, while K-Means clustering uncovered hidden structures within the dataset. The experiment highlights the importance of selecting appropriate machine learning approaches based on data characteristics, business goals, and evaluation requirements.
+
+---
+
+## 🔗 Project & Dataset Links
+
+📘 **Google Colab Notebook**👉 [https://colab.research.google.com/drive/1PQRBhoPnNgC-NJRkUefkyjA3-xRaAluA]
+
+📊 **Dataset Reference**👉 [https://www.kaggle.com/code/fatmakursun/supervised-unsupervised-learning-examples/notebook]
+
+---
+
+## 🙏 Acknowledgement
+
+I would like to thank my faculty, online learning platforms, and the open-source community for their guidance and resources in understanding supervised and unsupervised machine learning concepts.
 
 ---
