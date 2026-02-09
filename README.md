@@ -656,7 +656,7 @@ The model uses the following input features after preprocessing:
 |                                     File Name                                       |                     Description                       |
 |-------------------------------------------------------------------------------------|-------------------------------------------------------|
 |                                    `hour.csv`                                       | UCI Bike Sharing dataset used for regression analysis |
-| ` Bike-Demand-Forecasting-using-Subagging-vs-Bagging-vs-Boosting-(Regression).ipynb'|     Colab notebook with implementation and outputs    |                   |                            `cv_regression_results.csv`                              |           Cross validation metrics per model          |
+| `Bike-Demand-Forecasting-using-Subagging-vs-Bagging-vs-Boosting-(Regression).ipynb' |     Colab notebook with implementation and outputs    |                              |                            `cv_regression_results.csv`                              |           Cross validation metrics per model          |
 |                              `final_predictions.csv`                                |             Predicted vs actual bike counts           |
 |                                    `README.md`                                      |                  Project documentation                | 
 
